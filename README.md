@@ -1,4 +1,4 @@
-# ModBotX - Advanced Discord Moderation Bot
+# ModBotX - Advanced Discord AI Moderation Bot
 
 <div align="center">
   <img src="https://i.ibb.co/4ZRjZZ5g/image.png" alt="ModBotX Banner" width="900">
