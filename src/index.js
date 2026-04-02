@@ -1,5 +1,4 @@
 require('dotenv').config({ quiet: true });
-require('./console/watermark');
 
 const { Client, Partials, Collection, GatewayIntentBits, Events } = require('discord.js');
 const colors = require('colors');

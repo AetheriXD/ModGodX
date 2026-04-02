@@ -72,7 +72,7 @@ module.exports = {
                                 autoMod.actions.muteUser ? 'Mute' : null
                             ].filter(Boolean).join(' + ') || 'Logged only';
 
-                            const logBlock = buildAutoModLogBlock('ðŸ›¡ï¸ **Static Auto-Moderation Alert**', '#ff9900', [
+                            const logBlock = buildAutoModLogBlock('🛡️ **Static Auto-Moderation Alert**', '#ff9900', [
                                 `> **User:** <@${message.author.id}> (${message.author.id})`,
                                 `> **Channel:** <#${message.channel.id}>`,
                                 `> **Reason:** ${staticCheck.reason}`,

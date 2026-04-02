@@ -448,19 +448,19 @@ Moderation Stats:
 - Top Moderators: ${JSON.stringify(stats.topModerators || [])}
 
 Respond in this exact format (use emojis for visual appeal):
-ðŸ” **Server Health Summary**
+🔍 **Server Health Summary**
 [2-3 sentence overview of server health status]
 
-ðŸ“Š **Key Insights**
-â€¢ [insight 1 about moderation patterns]
-â€¢ [insight 2 about trends]
-â€¢ [insight 3 about risk level]
+📊 **Key Insights**
+• [insight 1 about moderation patterns]
+• [insight 2 about trends]
+• [insight 3 about risk level]
 
-ðŸ’¡ **Recommendations**
-â€¢ [actionable recommendation 1]
-â€¢ [actionable recommendation 2]
+💡 **Recommendations**
+• [actionable recommendation 1]
+• [actionable recommendation 2]
 
-âš¡ **Risk Level**: [Low/Medium/High] â€” [1 sentence explanation]`;
+⚡ **Risk Level**: [Low/Medium/High] — [1 sentence explanation]`;
 
         const completion = await groq.chat.completions.create({
             messages: [

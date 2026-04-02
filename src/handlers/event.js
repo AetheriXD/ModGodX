@@ -35,13 +35,13 @@ module.exports = (client) => {
     ].join('\n');
 
     const boxLength = Math.max(...allEvents.split('\n').map(line => line.length)) + 4;
-    const top = `╔${'─'.repeat(boxLength)}╗`;
-    const bottom = `╚${'─'.repeat(boxLength)}╝`;
-    console.log(colors.cyan(top));
+    const border = `+${'-'.repeat(boxLength - 2)}+`;
+    
+    console.log(colors.cyan(border));
     allEvents.split('\n').forEach(line => {
-        console.log(colors.cyan(`║ ${line.padEnd(boxLength - 2)} ║`));
+        console.log(colors.cyan(`| ${line.padEnd(boxLength - 4)} |`));
     });
-    console.log(colors.cyan(bottom));
+    console.log(colors.cyan(border));
 
     console.log(colors.magenta('All events loaded successfully!'));
 };

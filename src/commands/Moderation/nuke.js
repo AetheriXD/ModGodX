@@ -36,7 +36,7 @@ module.exports = {
 
             const responseBlock = new ContainerBuilder()
                 .addTextDisplayComponents(
-                    new TextDisplayBuilder().setContent(`${config.nuke_emoji || 'ðŸ’¥'} **Channel Nuked!**\n> All messages have been cleared.`)
+                    new TextDisplayBuilder().setContent(`${config.nuke_emoji || '💥'} **Channel Nuked!**\n> All messages have been cleared.`)
                 );
 
             await clonedChannel.send({

@@ -37,7 +37,7 @@ class AutomationService {
                     ticket.closedAt = Date.now();
                     await ticket.save();
                     
-                    await channel.send('ðŸ”’ **Auto-Close:** This ticket has been closed due to inactivity.');
+                    await channel.send('🔒 **Auto-Close:** This ticket has been closed due to inactivity.');
                     setTimeout(() => channel.delete().catch(() => {}), 10000);
                 }
             }

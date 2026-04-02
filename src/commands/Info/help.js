@@ -71,8 +71,8 @@ const formatCategoryOverview = (commands, prefix) => {
         .slice()
         .sort((a, b) => a.name.localeCompare(b.name))
         .map(command => {
-            const slash = command.slashData ? ` â€¢ \`/${command.name}\`` : '';
-            return `â€¢ ${prefix}\`${command.name}\`${slash}\n  ${getCommandSummary(command)}`;
+            const slash = command.slashData ? ` • \`/${command.name}\`` : '';
+            return `• ${prefix}\`${command.name}\`${slash}\n  ${getCommandSummary(command)}`;
         });
 
     return lines.length ? lines.join('\n\n') : 'No commands are available in this category right now.';

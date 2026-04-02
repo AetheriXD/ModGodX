@@ -49,7 +49,7 @@ class LoggerService {
         };
 
         const lines = [
-            `ðŸ—‚ï¸ **Case #${caseId} | ${action.toUpperCase()}**`,
+            `📁 **Case #${caseId} | ${action.toUpperCase()}**`,
             `> **Target:** <@${target.id}> (${target.tag || target.user?.tag || target.id})`,
             `> **Moderator:** <@${moderator.id}> (${moderator.tag || moderator.user?.tag || moderator.id})`,
             `> **Reason:** ${reason || 'No reason provided.'}`,

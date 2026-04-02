@@ -59,7 +59,7 @@ module.exports = {
 
         try {
             await targetUser.send({
-                content: `ðŸ“© **New message from ${context.guild.name}**\n> ${dmMessage}`
+                content: `📧 **New message from ${context.guild.name}**\n> ${dmMessage}`
             });
 
             const successBlock = new ContainerBuilder()
